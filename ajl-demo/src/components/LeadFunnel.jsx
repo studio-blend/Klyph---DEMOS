@@ -308,7 +308,7 @@ export default function LeadFunnel({ prefilledService }) {
                     </div>
 
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', background: 'rgba(255,255,255,0.02)', padding: '12px', borderRadius: '6px', border: '1px solid var(--border-light)' }}>
-                      <MapPin size={16} style={{ color: 'var(--accent-purple)', marginTop: '2px', flexShrink: 0 }} />
+                      <MapPin size={16} style={{ color: 'var(--accent-gold)', marginTop: '2px', flexShrink: 0 }} />
                       <p style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
                         Fitted locally by Adam (Welshy) Lewis. Our team has fully vetted public liability insurance for domestic glazing work.
                       </p>
@@ -354,16 +354,16 @@ export default function LeadFunnel({ prefilledService }) {
 
               {estimate && (
                 <div style={{
-                  background: 'linear-gradient(135deg, rgba(28, 5, 33, 0.95) 0%, rgba(16, 2, 19, 0.98) 100%)',
-                  border: '1px solid var(--accent-purple)',
+                  background: 'linear-gradient(135deg, rgba(14, 19, 31, 0.95) 0%, rgba(7, 9, 14, 0.98) 100%)',
+                  border: '1px solid var(--border-gold)',
                   padding: '24px',
                   borderRadius: '12px',
                   marginBottom: '24px',
                   textAlign: 'center',
-                  boxShadow: '0 8px 32px rgba(217, 70, 239, 0.15)'
+                  boxShadow: 'var(--shadow-gold)'
                 }}>
                   <span style={{ textTransform: 'uppercase', fontSize: '11px', letterSpacing: '0.15em', color: 'var(--text-muted)', display: 'block', marginBottom: '6px' }}>Estimated Price Range</span>
-                  <div style={{ fontSize: '36px', fontWeight: '800', color: 'var(--accent-purple-hover)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.02em', textShadow: '0 0 10px rgba(217, 70, 239, 0.3)' }}>
+                  <div style={{ fontSize: '36px', fontWeight: '800', color: 'var(--accent-gold-hover)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.02em', textShadow: '0 0 10px rgba(197, 168, 128, 0.2)' }}>
                     £{estimate.min.toLocaleString()} - £{estimate.max.toLocaleString()}
                   </div>
                   <span style={{ fontSize: '12px', color: 'var(--text-secondary)', display: 'block', marginTop: '4px' }}>
@@ -372,7 +372,7 @@ export default function LeadFunnel({ prefilledService }) {
                 </div>
               )}
               
-              <div style={{ background: 'rgba(217, 70, 239, 0.05)', border: '1px solid var(--border-medium)', padding: '16px', borderRadius: '8px', marginBottom: '30px', textAlign: 'left' }}>
+              <div style={{ background: 'var(--accent-gold-glow)', border: '1px solid var(--border-medium)', padding: '16px', borderRadius: '8px', marginBottom: '30px', textAlign: 'left' }}>
                 <h4 style={{ fontSize: '14px', color: '#fff', marginBottom: '6px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <span>⚡</span> What happens next?
                 </h4>

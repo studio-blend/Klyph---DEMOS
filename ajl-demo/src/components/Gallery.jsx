@@ -111,7 +111,7 @@ export default function Gallery() {
                 style={{
                   position: 'absolute',
                   inset: 0,
-                  background: 'linear-gradient(to top, rgba(16, 2, 19, 0.95) 10%, rgba(28, 5, 33, 0.4) 100%)',
+                  background: 'linear-gradient(to top, rgba(7, 9, 14, 0.95) 10%, rgba(14, 19, 31, 0.4) 100%)',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'flex-end',
@@ -121,7 +121,7 @@ export default function Gallery() {
                   border: '1px solid var(--border-gold)'
                 }}
               >
-                <div style={{ position: 'absolute', top: '20px', right: '20px', background: 'rgba(157, 92, 246, 0.2)', border: '1px solid var(--accent-purple)', padding: '6px', borderRadius: '50%', color: 'var(--accent-purple-hover)' }}>
+                <div style={{ position: 'absolute', top: '20px', right: '20px', background: 'var(--accent-gold-glow)', border: '1px solid var(--border-gold)', padding: '6px', borderRadius: '50%', color: 'var(--accent-gold-hover)' }}>
                   <Eye size={18} />
                 </div>
                 

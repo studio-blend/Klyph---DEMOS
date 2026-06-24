@@ -7,7 +7,7 @@ export default function Hero({ onExploreServices, onDesignYourOwn }) {
       <div className="container">
         <div className="hero-content">
           <div className="hero-badge">
-            <span className="badge-dot" style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'var(--accent-purple)', display: 'inline-block' }}></span>
+            <span className="badge-dot" style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'var(--accent-gold)', display: 'inline-block' }}></span>
             <span>Liverpool & The Northwest</span>
           </div>
           
@@ -33,7 +33,7 @@ export default function Hero({ onExploreServices, onDesignYourOwn }) {
           {/* Quick Trust Pillars */}
           <div style={{ display: 'flex', gap: '30px', marginTop: '60px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div style={{ color: 'var(--accent-purple)', background: 'rgba(217, 70, 239, 0.1)', padding: '10px', borderRadius: '50%' }}>
+              <div style={{ color: 'var(--accent-gold)', background: 'var(--accent-gold-glow)', padding: '10px', borderRadius: '50%' }}>
                 <Award size={20} />
               </div>
               <div>
@@ -43,7 +43,7 @@ export default function Hero({ onExploreServices, onDesignYourOwn }) {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div style={{ color: 'var(--accent-purple)', background: 'rgba(217, 70, 239, 0.1)', padding: '10px', borderRadius: '50%' }}>
+              <div style={{ color: 'var(--accent-gold)', background: 'var(--accent-gold-glow)', padding: '10px', borderRadius: '50%' }}>
                 <ShieldCheck size={20} />
               </div>
               <div>

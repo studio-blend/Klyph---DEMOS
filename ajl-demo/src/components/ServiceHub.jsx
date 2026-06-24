@@ -145,8 +145,8 @@ export default function ServiceHub({ onSelectService, selectedService }) {
                   key={idx} 
                   className={`service-item-card ${isSelected ? 'active' : ''}`}
                   style={{
-                    borderColor: isSelected ? 'var(--accent-purple)' : undefined,
-                    background: isSelected ? 'rgba(157, 92, 246, 0.08)' : undefined
+                    borderColor: isSelected ? 'var(--accent-gold)' : undefined,
+                    background: isSelected ? 'var(--accent-gold-glow)' : undefined
                   }}
                   onClick={() => handleServiceClick(service.name)}
                 >
