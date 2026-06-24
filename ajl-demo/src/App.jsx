@@ -11,17 +11,6 @@ import Footer from './components/Footer';
 
 function App() {
   const [selectedService, setSelectedService] = useState('');
-  const [theme, setTheme] = useState('dark');
-
-  const toggleTheme = () => {
-    const nextTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(nextTheme);
-    if (nextTheme === 'light') {
-      document.body.classList.add('light-theme');
-    } else {
-      document.body.classList.remove('light-theme');
-    }
-  };
 
   const handleSelectService = (serviceName) => {
     setSelectedService(serviceName);
@@ -46,7 +35,7 @@ function App() {
   return (
     <>
       {/* Premium Navigation Header */}
-      <Header theme={theme} onToggleTheme={toggleTheme} />
+      <Header />
 
       {/* Hero Showcase Section */}
       <Hero 

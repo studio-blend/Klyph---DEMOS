@@ -1,26 +1,26 @@
 :root {
-  --bg-main: #100213; /* Deep dark plum from logo */
-  --bg-card: #1c0521; /* Aubergine card */
-  --bg-card-light: #280a30; /* Medium aubergine */
-  --bg-glass: rgba(22, 4, 27, 0.8);
-  --bg-glass-hover: rgba(40, 10, 48, 0.9);
-  --accent-gold: #cbd5e1; /* Silver Chrome from logo */
-  --accent-gold-hover: #f8fafc;
-  --accent-gold-glow: rgba(203, 213, 225, 0.15);
-  --accent-purple: #d946ef; /* Vibrant brand purple/magenta */
-  --accent-purple-hover: #f472b6;
-  --accent-purple-glow: rgba(217, 70, 239, 0.2);
-  --accent-purple-dark: #a21caf;
+  --bg-main: #090e17; /* Obsidian Black */
+  --bg-card: #0f172a; /* Slate Dark Card */
+  --bg-card-light: #1e293b; /* Medium Slate */
+  --bg-glass: rgba(15, 23, 42, 0.8);
+  --bg-glass-hover: rgba(30, 41, 59, 0.9);
+  --accent-gold: #c5a880; /* Champagne Gold */
+  --accent-gold-hover: #e2d4c0;
+  --accent-gold-glow: rgba(197, 168, 128, 0.15);
+  --accent-purple: #c5a880; /* Champagne Gold as primary interactive highlight */
+  --accent-purple-hover: #e2d4c0;
+  --accent-purple-glow: rgba(197, 168, 128, 0.2);
+  --accent-purple-dark: #9f7e56;
   
   --text-primary: #f8fafc;
-  --text-secondary: #d8b4fe; /* Lavender-secondary text */
-  --text-muted: #a78bfa;
-  --text-dark: #100213;
+  --text-secondary: #cbd5e1; /* Slate secondary text */
+  --text-muted: #64748b;
+  --text-dark: #090e17;
   
-  --border-light: rgba(216, 180, 254, 0.08);
-  --border-medium: rgba(216, 180, 254, 0.16);
-  --border-gold: rgba(203, 213, 225, 0.3);
-  --border-gold-active: rgba(203, 213, 225, 0.8);
+  --border-light: rgba(197, 168, 128, 0.1);
+  --border-medium: rgba(197, 168, 128, 0.2);
+  --border-gold: rgba(197, 168, 128, 0.35);
+  --border-gold-active: rgba(197, 168, 128, 0.8);
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
@@ -28,107 +28,10 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.8);
-  --shadow-gold: 0 0 20px rgba(203, 213, 225, 0.15);
+  --shadow-gold: 0 0 20px rgba(197, 168, 128, 0.12);
   
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-body.light-theme {
-  --bg-main: #faf5ff;
-  --bg-card: #ffffff;
-  --bg-card-light: #f5e3fc;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-  --bg-glass-hover: rgba(243, 232, 255, 0.95);
-  --accent-gold: #475569;
-  --accent-gold-hover: #0f172a;
-  --accent-gold-glow: rgba(71, 85, 105, 0.1);
-  --accent-purple: #d946ef; /* Unified brand magenta purple */
-  --accent-purple-hover: #f472b6; /* Unified hover pink */
-  --accent-purple-glow: rgba(217, 70, 239, 0.2);
-  --accent-purple-dark: #a21caf;
-  
-  --text-primary: #1c0521; /* Rich dark plum text */
-  --text-secondary: #2e0854; /* High-contrast indigo-plum */
-  --text-muted: #581c87; /* Soft dark purple */
-  --text-dark: #ffffff;
-  
-  --border-light: rgba(217, 70, 239, 0.15);
-  --border-medium: rgba(217, 70, 239, 0.25);
-  --border-gold: rgba(71, 85, 105, 0.25);
-  --border-gold-active: rgba(71, 85, 105, 0.7);
-  
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 8px 24px rgba(74, 4, 78, 0.08);
-  --shadow-lg: 0 16px 40px rgba(74, 4, 78, 0.12);
-  --shadow-gold: 0 0 20px rgba(74, 4, 78, 0.05);
-}
-
-body.light-theme .hero-bg {
-  background-image: linear-gradient(to right, var(--bg-main) 30%, rgba(250, 245, 255, 0.45) 70%, transparent 100%), url('/hero.png');
-}
-
-@media (max-width: 768px) {
-  body.light-theme .hero-bg {
-    background-image: linear-gradient(to bottom, var(--bg-main) 20%, rgba(250, 245, 255, 0.65) 60%, var(--bg-main) 100%), url('/hero.png');
-  }
-}
-
-body.light-theme .configurator-preview {
-  background: radial-gradient(circle at center, #f5d0fe 0%, #faf5ff 100%);
-}
-
-body.light-theme .slider-label {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: var(--shadow-md);
-}
-
-body.light-theme .section-title {
-  background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent-gold) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-body.light-theme .hero-title span {
-  background: linear-gradient(135deg, var(--text-primary) 20%, var(--accent-purple) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-body.light-theme .funnel-field {
-  background: #ffffff;
-  color: #1c0521;
-}
-
-body.light-theme .funnel-field option {
-  background-color: #ffffff;
-  color: #1c0521;
-}
-
-body.light-theme .site-header {
-  background: rgba(250, 245, 255, 0.85);
-  border-bottom-color: rgba(168, 85, 247, 0.15);
-}
-
-body.light-theme .site-header.scrolled {
-  background: rgba(250, 245, 255, 0.98);
-}
-
-body.light-theme .site-footer {
-  background: #faf5ff;
-  border-top-color: rgba(168, 85, 247, 0.15);
-}
-
-body.light-theme .review-author {
-  color: #1c0521;
-}
-
-body.light-theme .review-service-badge {
-  background: rgba(168, 85, 247, 0.08);
-}
-
-body.light-theme .theme-toggle-btn:hover {
-  background: rgba(168, 85, 247, 0.08);
 }
 
 * {

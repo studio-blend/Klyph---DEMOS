@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Sparkles, Sun, Moon } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
-export default function Header({ theme, onToggleTheme }) {
+export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -59,28 +59,7 @@ export default function Header({ theme, onToggleTheme }) {
           </ul>
         </nav>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <button 
-            type="button"
-            className="theme-toggle-btn"
-            onClick={onToggleTheme}
-            aria-label="Toggle Theme"
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              color: 'var(--text-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '8px',
-              borderRadius: '50%',
-              transition: 'var(--transition-smooth)'
-            }}
-          >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
+        <div>
           <button className="btn btn-primary header-cta-btn" onClick={() => scrollToSection('contact')}>
             <Sparkles size={16} />
             <span>Instant Quote</span>
